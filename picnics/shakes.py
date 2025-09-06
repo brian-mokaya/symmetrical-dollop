@@ -1,5 +1,6 @@
 import math
 import random
+import datetime
 
 print("Square root of 36:", math.sqrt(36))
 print("Sine of 90 degrees:", math.sin(math.radians(90)))
@@ -16,3 +17,10 @@ print("Shuffled numbers:", numbers)
  
 # Random choice from a list
 print("Random choice from a list:", random.choice(['apple', 'banana', 'cherry'])) 
+
+ 
+today = datetime.date.today()
+print("Today's date is:", today)
+
+now = datetime.datetime.now()
+print("Current time:", now.strftime("%H:%M:%S")) 
